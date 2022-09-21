@@ -9,7 +9,8 @@
     "test": "ng test",
     "scully": "npx scully --project my-blog",
     "scully:scan": "npx scully --scanRoutes",
-    "scully:serve": "npx scully serve --project my-blog"
+    "scully:serve": "npx scully serve --project my-blog",
+    "build:scully": "npm install --legacy-peer-deps && npm run build && npm run scully -- --scanRoutes"
   },
   "private": true,
   "dependencies": {
